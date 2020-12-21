@@ -1,0 +1,10 @@
+PACKAGE_NAME="gtp5g"
+PACKAGE_VERSION="#MODULE_VERSION#"
+BUILT_MODULE_NAME[0]="gtp5g"
+MAKE="'make' clean;'make' all;kmodsign sha512 \
+    /var/lib/shim-signed/mok/MOK.priv \
+    /var/lib/shim-signed/mok/MOK.der \
+    gtp5g.ko"
+CLEAN="'make' clean"
+DEST_MODULE_LOCATION[0]="/updates/dkms"
+AUTOINSTALL="YES"

@@ -1,0 +1,17 @@
+Source: gtp5g
+Section: unknown
+Priority: optional
+Maintainer: alphatld5-2 <alphatld5-2@unknown>
+Build-Depends: debhelper (>= 10), dkms, dh-modaliases
+Standards-Version: 4.1.2
+Homepage: https://github.com/PrinzOwO/gtp5g.git
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/gtp5g.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/gtp5g.git
+
+Package: gtp5g-dkms
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, sbsigntool
+Description: 5G compatible GTP kernel module
+ gtp5g is a customized Linux kernel module gtp5g to handle packet by PFCP 
+ IEs such as PDR and FAR. For detailed information, please reference to 
+ 3GPP specification TS 29.281 and TS 29.244.
